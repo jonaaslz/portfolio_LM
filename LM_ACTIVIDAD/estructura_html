@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a las Bases de Datos</title>
+</head>
+<body>
+    <header>
+        <h1 id="iniciopagina">Introducción a las Bases de Datos</h1>
+        <nav>
+            <ul>
+                <li><a href="#conceptosytipos">conceptos y tipos</a></li>
+                <li><a href="#estructuradedatos">estructura de datos</a></li>
+                <li><a href="#relaciones">relaciones</a></li>
+                <li><a href="#recursosdeinteres">recursos de interes</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="conceptosytipos">
+            <h2>Concepto y Tipos de Bases de Datos</h2>
+            <article>
+                <h3>Bases de datos relacionales</h3>
+                <p>Las bases de datos relacionales agrupan de manera estructurada los datos de un mismo contexto en tablas compuestas por filas y columnas. Un ejemplo sería MySQL o PostgreSQL.</p>
+            </article>
+            <article>
+                <h3>Bases de datos no relacionales</h3>
+                <p>Un ejemplo sería MongoDB. NoSQL significa "Not Only SQL", lo que indica que no solo utilizan lenguaje SQL sino que permiten esquemas flexibles para almacenar datos no estructurados.</p>
+            </article>
+        </section>
+
+        <section id="estructuradedatos">
+            <h2>Estructura de una Base de Datos Relacional</h2>
+            <article>
+                <h3>Componentes fundamentales</h3>
+                <p>Para definir la estructura dentro de un modelo relacional se emplean los siguientes elementos:</p>
+                <ul>
+                    <li><b>Tablas (Entidades):</b> Objetos principales sobre los cuales se almacena información estructurada.</li>
+                    <li><b>Campos (Atributos):</b> Columnas individuales que definen las propiedades o características de cada entidad.</li>
+                    <li><b>Registros (Tuplas):</b> Filas individuales que representan cada elemento o instancia concreta guardada en la tabla.</li>
+                    <li><b>Claves primarias (Primary Keys):</b> Campos cuyo valor es único e irrepetible para cada registro, garantizando su identificación.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="relaciones">
+            <h2>Relaciones entre Tablas</h2>
+            <article>
+                <h3>Cardinalidades y Claves Foráneas</h3>
+                <p>Las relaciones determinan cómo se vinculan las entidades entre sí según las reglas del negocio del sistema. Las cardinalidades principales son:</p>
+                <ul>
+                    <li><b>Relación 1:1 (Uno a uno):</b> Cada registro de una tabla se relaciona con un único registro de otra.</li>
+                    <li><b>Relación 1:N (Uno a muchos):</b> Un registro de una tabla se puede relacionar con varios registros de otra.</li>
+                    <li><b>Relación N:M (Muchos a muchos):</b> Múltiples registros de una tabla se relacionan con múltiples registros de otra.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>FOREIGN KEY</h3>
+                <p>El Foreign Key (clave foránea) es fundamental ya que nos permite vincular los datos de diferentes tablas haciendo referencia a la clave primaria de otra tabla, garantizando la integridad de la información.</p>
+            </article>
+        </section>
+    </main>
+
+    <aside id="recursosdeinteres">
+        <h2>Recursos de interés</h2>
+        
+        <h3>Glosario de términos</h3>
+        <p>SQL (Structured Query Language): Lenguaje estándar de programación utilizado para gestionar, manipular y recuperar datos almacenados en bases de datos relacionales. </p>
+           
+        <p>SGBD (Sistema de Gestión de Bases de Datos): Software que actúa como interfaz entre la base de datos, los usuarios y las aplicaciones, 
+        permitiendo almacenar, modificar y organizar la información de forma segura y eficiente. </p>
+        
+        <p>Normalización: Proceso de organización de los datos en una base de datos relacional para reducir la redundancia y mejorar la integridad de la información.</p>
+        <h3>Enlaces de ayuda</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/sql/" target="_blank">Tutorial SQL</a></li>
+            <li><a href="https://www.iso.org/standard/63555.html" target="_blank">Estandarización SQL</a></li>
+        </ul>
+    </aside>
+    <br>
+    <footer>
+        <p>Nombre: Jonathan Salazar Cortés</p>
+        <p>Curso: 1º ASIR</p>
+        <p>Fecha: 08/10/2026</p>
+        <p>Licencia MIT</p>
+        <br>
+        <p><a href="#iniciopagina">Inicio de página</a></p>
+    </footer>
+</body>
+</html>
