@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primera tabla</title>
+    <style>
+        table,tr, th, td{
+            border: 1px solid red;
+            text-align: center;
+            border-collapse: collapse;
+        
+        }
+        p{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mis primeras tablas</h1>
+    <p>aqui hay un ejemplo de mi primera tabla:</p>
+    <table>
+        <tr>
+            <th>Posición</th>
+            <th>Nombre</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1º</td>
+            <td>Noa Mahanaim</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Jonathan Salazar</td>
+            <td>11</td>
+        </tr>
+    </table>
+    <p>Bien ahora vamos a ver algo mas complicado</p>
+    <table>
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <p>Ahora vamos a realizar un ejemplo de anidar tablas</p>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                    </tr>
+                    <tr>
+                        <td>d</td>
+                        <td>e</td>
+                        <td>f</td>
+                    </tr>
+                    <tr>
+                        <td>g</td>
+                        <td>h</td>
+                        <td>i</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+</body>
+</html>
