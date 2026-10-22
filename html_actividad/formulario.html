@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de formularios</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejercicio de formularios</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario 1</h2>
+            <article>
+                <form>
+                    <fieldset> <!-- el fieldset sirve para crear el recuadro bordeado-->
+                    <legend>Completar</legend> <!-- el legend sirve para poner un titulo en el recuadro-->
+                    <label>Elija un color</label> <!-- es como un p, pero para los form-->
+                    <input type="color"><!--sirve para poner un color-->
+                    <br><br>
+                    <textarea rows="5" cols="53">Por favor, escriba aquí</textarea> <!--Sirve para crear un area donde se escribe-->
+                    <br>
+                    <select name="lenguaje"> <!-- el select y los option sirven para crear una lista seleccionada-->
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="html">HTML</option>
+                    <option value="visual_basic">Visual Basic</option>
+                    </select>
+                        <br>
+                    <input type="checkbox" name="ciclo" value="cicloasir">ASIR <!-- el checkbox es con input y sirve para hacer un recuadro rellenable o no-->
+                    <input type="checkbox" name="ciclo" value="ciclodam">DAM
+                    <input type="checkbox" name="ciclo" value="ciclodaw">DAW
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Rellene las opciones siguientes</legend>
+                    <label for="fechita">Elija una fecha:</label>
+                    <input type="date" id="fechita"> <!--sirve para poner una fecha-->
+                        <br>
+                    <label for="fichero">Elija un fichero:</label>
+                    <input type="file" id="fichero"> <!-- input file sirve para crear un control fichero-->
+                        <br>
+                    <select name="ciclo" multiple>
+                        <option value="smir">SMIR</option>
+                        <option value="asir">ASIR</option>
+                        <option value="dam">DAM</option>
+                        <option value="daw">DAW</option>
+                    </select>
+                    </fieldset>
+                    </form>
+            </article>
+        </section>
+        <section>
+            <h2>Formulario 2</h2>
+            <article>
+                <form>
+                    <fieldset>
+                        <legend>Rellenar</legend>
+                        <input type="radio" name="asignatura" value="asignaturalengua">Lengua <br> <!--un input radio sirve para generar varias opciones y solo poder elegir una pero en vez de un cuadrado es un circulo-->
+                        <input type="radio" name="asignatura" value="asignaturamatematicas">Matemáticas <br>
+                        <input type="radio" name="asignatura" value="asignaturahistoria">Historia <br>
+                        <input type="radio" name="asignatura" value="asignaturageografia">Geografía <br> <br>
+                        <input type="checkbox" name="editor" value="editornotepad"> Notepad
+                        <input type="checkbox" name="editor" value="editoremacs"> Emacs
+                        <input type="checkbox" name="editor" value="editorotro"> Otro<br><br>
+
+                        <textarea rows="5" cols="59">Escriba aquí, por favor</textarea><br><br>
+
+                        <select name="procesador">
+                            <option value="amd">AMD</option>
+                            <option value="intel_i5">Intel i5</option>
+                            <option value="intel_i7">Intel i7</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <section>
+            <h2>Formulario 3</h2>
+            <article>
+                <form>
+                    <fieldset>
+                    <legend>Rellenar</legend>
+
+                    <input type="radio" name="asignatura" value="asignaturageografia"> Geografía
+                    <input type="radio" name="asignatura" value="asignaturalengua"> Lengua
+                    <input type="radio" name="asignatura" value="asignaturamatematicas"> Matemáticas
+                    <input type="radio" name="asignatura" value="asignaturahistoria"> Historia<br><br>
+
+                    <label>Elija una hora: </label>
+                    <input type="time"><br><br>
+
+                    <input type="checkbox" name="idioma" value="idiomaespanol"> Español<br>
+                    <input type="checkbox" name="idioma" value="idiomaingles"> Inglés<br>
+                    <input type="checkbox" name="idioma" value="idiomaaleman"> Alemán<br>
+                    <input type="checkbox" name="idioma" value="idiomafrances"> Francés<br><br>
+
+                    <label>Nombre </label>
+                    <input type="text" name="nombre"><br><br>
+
+                    <label>Apellidos </label>
+                    <input type="text" name="apellidos">
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
