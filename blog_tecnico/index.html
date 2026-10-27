@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog técnico</title>
+    <style>
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabeza">
+        <h1 style="text-align: center;">TechOps & SysAdmin Blog</h1>
+        <p style="text-align: center;">Tu éxito, nuestro software</p>
+            <nav>
+                <ul>
+                    <li><a href="#Noticias"><b>Noticias destacadas</b></a>
+                    <ul>
+                        <li><a href="#kernel">Vulnerabilidad en Kernel Linux</a></li>
+                        <li><a href="#aws">Migración exitosa de monolítica a kubernetes en AWS</a></li>
+                        <li><a href="#backup">Tutorial para realizar buenas copias de seguridad</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#interes"><b>Enlaces de interes</b></a></li>
+                </ul>
+            </nav>
+    </header>
+    <br>
+    <main>
+            <h1 id="Noticias">Noticias destacadas</h1>
+            <article>
+                <h2 id="kernel">Vulnerabilidad en Kernel Linux</h2>
+                <p style="font-size: 14px;">27 de octubre de 2026 - Publicado por el Equipo de seguridad TI</p>
+                <section>
+                    <h3>Descripción del problema</h3>
+                    <p>Se ha detectado una vulnerabilidad crítica de escalada de privilegios (CVE-2026- <br>XXXX) que afecta a múltiples versiones del kernel de Linux utilizadas en nuestros <br>servidores de producción. Esta falla permite a usuarios locales no autenticados <br>ejecutar código arbitrario con privilegios de superusuario (root) si se explotan <br>determinadas condiciones de gestión de memoria.</p>
+                </section>
+                <section>
+                    <h3>Solución aplicada</h3>
+                    <p>El departamento de infraestructura ha desplegado de manera automatizada el <br>parche de emergencia en todos los nodos del clúster. Se procedió a actualizar los <br>paquetes del núcleo a la versión segura, seguido de un reinicio programado y <br>controlado de los servicios para minimizar el impacto en la disponibilidad de la <br>plataforma</p>
+                </section>
+                <section>
+                    <p><a href="https://kernel.org/" target="_blank"><img src="img/logo cs.png" height="100px" alt="logo kernel"></a></p>
+                </section>
+                <section>
+                    <form>
+                        <fieldset style="width: 200px;">
+                            <legend><b>Comentarios</b></legend>
+                        <label for="nombre">ingrese aqui su nombre:</label>
+                        <input id="nombre" type="text"><br><br>
+                        <label for="eml">ingrese aqui su email:</label>
+                        <input type="email" id="eml"><br><br>
+                        <textarea rows="5" cols="53" id="coment">Ponga aqui su comentario</textarea><br><br>
+                        <input type="checkbox" name="politica" value="politicaSeguridad"> acepto las políticas de seguridad<br><br>
+                        <input type="submit"> 
+                        <input type="reset">
+                        </fieldset>
+                    </form>
+                </section>
+            </article>
+            <br>
+            <article>
+                <h2 id="aws">Migración exitosa de monolítica a kubernetes en AWS</h2>
+                <p style="font-size: 14px;">25 de octubre de 2026 - Publicado por el Equipo de CloudOps</p>
+                <section>
+                    <h3>Retos de la anterior infraestructura</h3>
+                    <p>Nuestra aplicación principal operaba bajo una arquitectura monolítica tradicional <br>alojada en servidores físicos locales. Esto generaba altos tiempos de <br>aprovisionamiento, dificultades para escalar de manera elástica ante picos de <br>tráfico y una dependencia crítica del hardware físico local</p>
+                </section>
+                <section>
+                    <h3>nueva arquitectura Kubernetes</h3>
+                    <p>Se completó la contenerización completa de los servicios utilizando Docker y su <br>posterior orquestación mediante Amazon EKS (Elastic Kubernetes Service). Gracias <br>a este cambio, ahora disponemos de despliegues automatizados (CI/CD), auto- <br>escalado dinámico basado en la demanda real de los usuarios y una mayor <br>tolerancia a fallos.</p>
+                </section>
+                <section>
+                    <p><a href="https://kubernetes.io/" target="_blank"><img src="img/logoaws.png" height="100px" alt="logo aws"></a></p>
+                </section>
+                <section>
+                    <form>
+                        <fieldset style="width: 200px;">
+                            <legend><b>Comentarios</b></legend>
+                        <label for="nombre">ingrese aqui su nombre:</label>
+                        <input id="nombre" type="text"><br><br>
+                        <label for="eml">ingrese aqui su email:</label>
+                        <input type="email" id="eml"><br><br>
+                        <textarea rows="5" cols="53" id="coment">Ponga aqui su comentario</textarea><br><br>
+                        <input type="checkbox" name="politica" value="politicaSeguridad"> acepto las políticas de seguridad<br><br>
+                        <input type="submit">
+                        <input type="reset">
+                        </fieldset>
+                    </form>
+                </section>
+            </article>
+            <br>
+            <article>
+                <h2 id="backup">Tutorial para realizar buenas copias de seguridad</h2>
+                <p style="font-size: 14px;">22 de octubre de 2026 - Publicado por el departamendo de Respaldos y Continuidad</p>
+                <section>
+                    <h3>Fundamentos de la regla 3-2-1</h3>
+                    <p>Para garantizar la resiliencia de los datos corporativos ante fallos de hardware, <br>ransomware o desastres naturales, es indispensable adoptar la regla de respaldo 3 <br>-2-1. Esta norma establece mantener al menos 3 copias de los datos (la original y 2 <br>respaldos), almacenados en 2 soportes o tecnologías distintas (por ejemplo, disco <br>local y almacenamiento en la nube), y conservar al menos 1 copia fuera de sitio <br>(offsite).</p>
+                </section>
+                <section>
+                    <h3>Automatización y pruebas de restauración</h3>
+                    <p>Un respaldo que no se ha probado no sirve de nada. Se recomienda automatizar las <br>tareas de copia de seguridad mediante scripts programados en horarios de baja <br>actividad y ejecutar simulacros de recuperación de datos de manera trimestral para <br>comprobar la integridad de la información y reducir el RTO</p>
+                </section>
+                <section>
+                <p><a href="https://www.cisco.com/" target="_blank"><img src="img/logobackup.png" height="100px" alt="logo backup"></a></p>
+                </section>
+                <section>
+                    <form>
+                        <fieldset style="width: 200px;">
+                            <legend><b>Comentarios</b></legend>
+                        <label for="nombre">ingrese aqui su nombre:</label>
+                        <input id="nombre" type="text"><br><br>
+                        <label for="eml">ingrese aqui su email:</label>
+                        <input type="email" id="eml"><br><br>
+                        <textarea rows="5" cols="53" id="coment">Ponga aqui su comentario</textarea><br><br>
+                        <input type="checkbox" name="politica" value="politicaSeguridad"> acepto las políticas de seguridad <br><br>
+                        <input type="submit">
+                        <input type="reset">
+                        </fieldset>
+                    </form>
+                </section>
+            </article>
+    </main>
+    <br>
+    <aside id="interes">
+        <h2>Enlaces de interes:</h2>
+        <ul>
+            <li><p>Debian <a href="https://www.debian.org/doc/">pincha aqui</a></p></li>
+            <li><p>Cisco <a href="https://www.cisco.com/c/en/us/support/index.html">picnha aqui</a></p></li>
+            <li><p>Backups <a href="https://www.incibe.es/sites/default/files/contenidos/guias/guia-copias-de-seguridad.pdf">pincha aqui</a></p></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Derechos reservados exclusivamente para SYSADMINBLOG ©</p>
+        <p><a href="#cabeza">volver arriba</a></p>
+    </footer>
+</body>
+</html>
