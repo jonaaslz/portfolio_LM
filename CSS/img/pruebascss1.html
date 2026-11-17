@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .izquierda{
+            border: 5px solid blue;
+            width: 200px;
+            text-align: center;
+            position: fixed;
+            bottom: 60%;
+            
+        }
+        .derecha{
+            border: 5px solid red;
+            width: 200px;
+            text-align: center;
+            position: fixed;
+            right: 0;
+            bottom: 60%;
+        }
+        .abajo_izq{
+            border: 5px solid rgb(59, 184, 111);
+            width: 200px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            top: 60%;
+        }
+        .abajo_der{
+             border: 5px solid rgb(213, 215, 92);
+            width: 200px;
+            text-align: center;
+            position: fixed;
+            right: 0;
+            top: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="izquierda">
+        <p>arriba a la izquierda</p>
+        <img src="image.png" width="200px">
+        <div style="position: absolute; left: 0; width: 100px; height: 50px; top: 78%; 
+            border: 3px solid black; background-color: azure;">
+            <p>subhijo</p>
+        </div>
+    </div>
+    <div class="derecha">
+        <p>arriba a la derecha</p>
+        <img src="image.png" width="200px">
+        <div style="position: absolute; left: 0; width: 100px; height: 50px; top: 78%; 
+            border: 3px solid black; background-color: azure;">
+            <p>subhijo</p>
+        </div>
+    </div>
+    <div class="abajo_izq">
+        <p>abajo a la izquierda</p>
+        <img src="image.png" width="200px">
+        <div style="position: absolute; right: 0; width: 100px; height: 50px; bottom: 78%; 
+            border: 3px solid black; background-color: azure;">
+            <p>subhijo</p>
+        </div>
+    </div>
+    <div class="abajo_der">
+        <p>abajo a la derecha</p>
+        <img src="image.png" width="200px">
+        <div style="position: absolute; left: 0; width: 100px; height: 50px; bottom: 78%; 
+            border: 3px solid black; background-color: azure;">
+            <p>subhijo</p>
+        </div>
+    </div>
+</body>
+</html>

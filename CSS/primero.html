@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º css</title>
+    <style>
+        .amarillo{
+            color: rgb(187, 187, 44); 
+        }
+        .amarillo:hover{
+            font-weight: bold;
+            font-size: 100px;
+            background-image: url(img/image.png);
+        }
+        .verde{
+            color: green;
+        }
+        .azul{
+            color:#0000FF;
+        }
+        p.azul::first-letter{
+            font-size: 2.5em;
+            font-weight: bold;
+            color: cadetblue;
+        }
+        p{
+            font-size: 20px;
+            font-family: "Georgia";
+            font-weight: bold;
+        }
+        h1{
+            font-family: "courier";
+            font-size: 30px;
+            font-weight: lighter;
+        }
+        ul.menu > li {
+            color: red;
+            font-size: 20px;
+        }
+        h2 + p{
+            color: blue;
+            font-size: 30px;
+        }
+        input[type="text"]{
+            border: 3px solid red;
+        }
+        input[type="number"]{
+            border: 3px solid blue;
+        }
+        a[href^="https"]{
+            color: red;
+        }
+       input:focus{
+        border: 5px red dashed;
+       }
+       tr:nth-child(odd){
+        background-color: blue;
+       }
+
+       .bloque{
+        width: 40%;
+        height: 50%;
+        border: 5px solid red;
+        border-radius: 8px;
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <!--titulos con sherif y textos largos sans -->
+    <h1 class="azul">Empezando con css</h1>
+
+    <p class="amarillo">amarillo</p>
+    <p class="verde">verde</p>
+    <p class="azul">azul</p>
+
+    <div style="border: 2px dotted red; padding: 50px; margin: 50px;">
+        <p>1º bloque</p>
+    </div>
+
+    <div style="border: 5px dashed green; padding-top: 100px; margin-top: 100px;">
+        2do bloque
+    </div>
+    <h1>ejemplo padre hijo</h1>
+    <ul class="menu">
+        <li>primera opción</li>
+        <ul>
+            <li>primera subopcion de la primera opción</li>
+            <li>segunda subopcion de la primera opción</li>
+        </ul>
+        <li>segunda opción</li>
+    </ul>
+    <h2>ejemplo del estilo con +</h2>
+    <p>esto se va a quedar de color</p>
+    <p>este no lo tendra</p>
+    <h2>sirve para dar estilo a los atributos</h2>
+    <form>
+        <label for="nombre">nombre:</label>
+        <input type="text" name="nombre" placeholder="escribe aqui tu nombre" id="nombre"/>
+        <label for="edad">edad:</label>
+        <input type="number" step="5" id="edad"/>
+        <input type="submit"/>
+        <input type="reset"/>
+    </form>
+    <h2>dar estilo a los href</h2> <!--el ^ sirve para decir a partir de esa palabra todos se pondran de ese color-->
+    <a href=https://onepiece.fandom.com/es/wiki/One_Piece_Wiki">ONE PIECE FANDOM</a>
+    <br><br><br>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <div class="bloque">
+        aqui hay algo
+        <img src="img/image.png" style="margin: 0px auto; display: block;">
+    </div>
+    <br><br>
+    <img src="img/image.png" style="margin: 0px auto; display: block;">
+</body>
+</html>
