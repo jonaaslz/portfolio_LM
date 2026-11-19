@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        p {
+            font-size: 16px;
+        }
+        div {
+            border: 2px solid blue;
+        }
+        h1 {
+            color: blue;
+        }
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+<body background="img/texturapapel.png">
+    <h1>Este es mi examen</h1>
+
+    <p><a href="https://www.vedoque.com">Esta es una buena página</a></p>
+
+    <figure>
+        <img src="img/paisaje.webp" height="100" alt="Paisaje">
+        <figcaption>Esta es una gran imagen.</figcaption>
+    </figure>
+
+    <h2 style="background-color: white;">El examen está siendo fácil</h2>
+
+    <p>No esperaba que fuera tan fácil</p>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>7.5</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="ciclo">Ciclo:</label>
+        <select id="ciclo" name="ciclo">
+            <option value="ASIR">ASIR</option>
+            <option value="DAM">DAM</option>
+            <option value="DAW">DAW</option>
+        </select><br><br>
+
+        Curso:
+        <input type="radio" id="primero" name="curso" value="primero">
+        <label for="primero">Primero</label>
+        <input type="radio" id="segundo" name="curso" value="segundo">
+        <label for="segundo">Segundo</label><br><br>
+
+        Estudios previos:
+        <input type="checkbox" id="bachillerato" name="estudios" value="bachillerato">
+        <label for="bachillerato">Bachillerato</label>
+        <input type="checkbox" id="smr" name="estudios" value="smr">
+        <label for="smr">SMR</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <footer>
+        <p>Hoy sí que voy a aprobar.</p>
+        <p><a href="index.html"><strong>Vuelve al índice</strong></a></p>
+        <p><a href="tabla.html"><strong>Ejercicio tabla</strong></a></p>
+    </footer>
+</body>
+</html>
